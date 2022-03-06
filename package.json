@@ -7,22 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx serverest",
     "cy:run": "npx cypress run",
-    "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json  > mochawesome-report/report.json && npx marge mochawesome-report/report.json"
+    "cy:report": "cypress run --record --key e5163410-5cf3-40a7-80ca-b7381786e349"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.7.0"
+    "cypress": "^8.7.0",
+    "mochawesome": "^7.1.2",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.1.1"
   },
   "dependencies": {
     "@faker-js/faker": "^6.0.0-alpha.7",
     "cypress-multi-reporters": "^1.5.0",
-    "joi": "^17.4.2",
-    "mocha": "^9.1.0",
-    "mochawesome": "^6.2.2",
-    "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.2.0"
+    "joi": "^17.4.2"
   },
   "repository": {
     "type": "git",
